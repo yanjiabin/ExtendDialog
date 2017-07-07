@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void convert(DialogViewHolder holder) {
 
-
             }
         }.fromBottomToMiddle().setCanceledOnTouchOutside(true).fullWidth().showDialog();
 
