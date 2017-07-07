@@ -1,6 +1,6 @@
 # ExtendDialog
 一款实用起来比较方便的dialog工具.
-# XXDialog 使用方式
+# ExtendsDialog 使用方式
 ##  添加依赖
 1.在project目录的build.gradle的allprojects节点添加
 ```java maven { url "https://jitpack.io" }```
@@ -23,14 +23,14 @@ dependencies {
 ## 开始使用
 * 准备好自己的dialog布局文件 例如 ```R.layout.dialog```
 ```java
-XXDialog xxDialog = new XXDialog(this, R.layout.dialog) {
+ExtendsDialog mExtendsDialog = new ExtendsDialog(this, R.layout.dialog) {
               @Override
               public void convert(DialogViewHolder holder) {
                     //holder有很多操作布局方法  自己点进去看源码
                     holder.setText()
               }
           };
-          xxDialog.fromBottom().backgroundLight(0.2).fullWidth().showDialog();
+          mExtendsDialog.fromBottom().backgroundLight(0.2).fullWidth().showDialog();
  ```
 * XXDialog的API:
 ```java
