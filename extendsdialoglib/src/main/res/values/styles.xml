@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/no_color</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="window_bottom_in_bottom_out">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_bottom</item>
+    </style>
+
+    <!--<style name="main_menu_lefttomiddle" parent="window_left_in" >-->
+    <!--<item name="android:windowEnterAnimation">@anim/dialog_in_left</item>-->
+    <!--</style>-->
+    <style name="window_left_in_left_out">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_left</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_left</item>
+    </style>
+
+    <style name="window_left_in_right_out">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_left</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_right</item>
+    </style>
+
+    <style name="window_right_in_right_out">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_right</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_right</item>
+    </style>
+    <style name="window_right_in_left_out">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_right</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_left</item>
+    </style>
+
+    <style name="dialog_scale_animstyle">
+        <item name="android:windowEnterAnimation">@anim/scale_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/scale_dialog_out_anim</item>
+    </style>
+
+    <style name="window_top_in_top_out">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_top</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_top</item>
+    </style>
+</resources>
