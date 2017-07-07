@@ -20,7 +20,6 @@ public class DialogViewHolder {
 	}
 
 	public View getConvertView() {
-
 		return mDialogView;
 
 	}
