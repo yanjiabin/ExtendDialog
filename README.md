@@ -13,11 +13,11 @@
         }
     }
 ```
-2.在自己Modul的build.gradle中添加```compile 'com.github.luoshihai:XXDialog:v1.0.2'```
+2.在自己Modul的build.gradle中添加```compile 'com.github.yanjiabin:ExtendDialog:1.0''```
 如下:
 ```java
 dependencies {
-	        compile 'com.github.luoshihai:XXDialog:v1.0.2'
+	       compile 'com.github.yanjiabin:ExtendDialog:1.0'
 	}
 ```
 ## 开始使用
