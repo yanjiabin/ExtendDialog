@@ -21,6 +21,7 @@ public abstract class ExtendsDialog {
     private DialogViewHolder dilaogVh;
     private View mRootView;
 
+
     public ExtendsDialog(Context context, int layoutId) {
         dilaogVh = DialogViewHolder.get(context, layoutId);
         mRootView = dilaogVh.getConvertView();

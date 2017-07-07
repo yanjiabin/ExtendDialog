@@ -1,9 +1,11 @@
 package com.github.yanjiabin.extendsdialoglib;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DialogViewHolder {
@@ -36,40 +38,52 @@ public class DialogViewHolder {
 		view.setText(text);
 		return this;
 	}
-	
+
+
+	/**
+	 *  设置给本地的图片资源给imageview
+	 * @param viewId
+	 * @param imageRes
+	 * @return
+	 */
+	public DialogViewHolder setImageRes(int viewId, int imageRes) {
+		ImageView image = getView(viewId);
+		image.setImageResource(imageRes);
+		return this;
+	}
+
+	/**
+	 *
+	 * @param viewId  imageview 的id
+	 * @param drawable  要给imageview设置的drawable
+	 * @return
+	 */
+	public DialogViewHolder setImageDrawable(int viewId, Drawable drawable) {
+		ImageView image = getView(viewId);
+		image.setImageDrawable(drawable);
+		return this;
+	}
+
 	/**
 	 * set view visible
 	 * 
 	 * @param viewId
+	 * @return  true 表示的是要显示控件  如果传入的是false的话就要隐藏
+	 */
+	public DialogViewHolder setViewViSibleOrNot(int viewId,boolean isShow) {
+		TextView view = getView(viewId);
+		view.setVisibility(isShow ? View.VISIBLE : View.INVISIBLE);
+		return this;
+	}
+
+	/**
+	 * set view INVISIBLE
+	 * @param viewId
 	 * @return
 	 */
-	public DialogViewHolder setViewInViSible(int viewId) {
+	public DialogViewHolder setViewInVisiable(int viewId) {
 		TextView view = getView(viewId);
 		view.setVisibility(View.INVISIBLE);
-		return this;
-	}
-	
-	/**
-	 * set view visible
-	 * 
-	 * @param viewId
-	 * @return
-	 */
-	public DialogViewHolder setViewViSible(int viewId) {
-		TextView view = getView(viewId);
-		view.setVisibility(View.VISIBLE);
-		return this;
-	}
-	
-	/**
-	 * set view gone
-	 * 
-	 * @param viewId
-	 * @return
-	 */
-	public DialogViewHolder setViewGone(int viewId) {
-		TextView view = getView(viewId);
-		view.setVisibility(View.GONE);
 		return this;
 	}
 
